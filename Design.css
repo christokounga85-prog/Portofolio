@@ -1,0 +1,240 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bord{
+    border: 2px solid black;
+    
+      background-color: blanchedalmond;
+      width: 100%;
+}
+header {
+    background-color: #00008b;
+   
+    height: 55px;
+    margin: 0px;
+    display: flex;
+    gap: 390px;
+
+}
+
+header p {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0;
+}
+
+.Paragraphe{
+    display: flex;
+    gap: 500px;
+    margin: 12px;
+    font-size: 22px;
+}
+.Paragraphe img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.Paragraphe p{
+    line-height: 1.2;
+   padding-left: 21px;
+}
+.Paragraphe span{
+    color: #1557a0;
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+.defil{
+    display: flex;
+    gap: 130px;
+    flex-wrap: wrap;
+    padding: 10px;
+  padding-left: 20px;
+}
+.defil img{
+  width: 30px;
+  height: 35px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+  object-fit: contain;
+  
+}
+
+.forme{
+    display: flex;
+    gap: 300px;
+      background-color: black;
+      width: 100%;
+      height: 150px;
+      color: white;
+         padding: 20px;
+         margin-top: 19px;
+}
+.propos,.formation{
+    flex: 1;
+    
+}
+.propos{
+    padding-right: 10px;
+    text-align: center;
+  
+}
+.formation{
+    text-align: center;
+}
+.propos img{
+    width: 10px;
+    color: white;
+}
+.stat-card{
+    width: 230px;
+    min-width: 0;
+    box-sizing: border-box;
+    border: 2px solid #1557a0;
+    border-radius: 5px;
+  text-align: center;
+}
+.stat-icon{
+    font-size: 35px;
+}
+.stat-card p{
+    color: #00008b;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.Réale{
+     display:grid;
+         grid-template-columns: repeat(4,1fr);
+    gap: 70px;
+    padding-left: 30px;
+  
+    
+}
+.con{
+    background-color: #0a192f;
+    border-radius: 64px;
+    color: whitesmoke;
+    padding: 40px 20px;
+    text-align: center;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 67px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 25px;
+}
+.Contact{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 180px;
+
+}
+.Contact p{
+    font-weight: bold;
+}
+
+/* RESPONSIVE POUR LES TELEPHONES */
+@media screen and (max-width: 600px) {
+
+    /* Barre bleue */
+    header {
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        min-height: 55px;
+        padding: 5px 10px;
+    }
+
+    header p {
+        font-size: 22px;
+    }
+
+    /* Présentation et photo */
+    .Paragraphe {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .Paragraphe p {
+        padding-left: 0;
+    }
+
+    /* À propos et formation */
+ .forme {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 30px;
+    overflow-wrap: anywhere;
+}
+
+    .propos,
+    .formation {
+        min-width: 0;
+    }
+
+    .propos {
+        padding-left: 0;
+    }
+
+    /* Compétences */
+    .defil {
+        justify-content: center;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    /* Réalisations */
+    .Réale {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .stat-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .stat-card p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contacts */
+    .con {
+        padding: 20px 10px;
+    }
+
+    .infor {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .Contact {
+        width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+}
